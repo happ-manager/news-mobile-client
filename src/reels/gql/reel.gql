@@ -1,0 +1,24 @@
+fragment Reel on ReelEntity {
+	id
+	name
+}
+
+fragment ReelWithDistance on ReelEntity {
+	id
+	name
+	link
+	position
+	icon
+	image {
+		id
+		url
+	}
+	place {
+		id
+		name
+		logo {
+			id
+			url
+		}
+	}
+}

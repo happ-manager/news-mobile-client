@@ -1,0 +1,37 @@
+fragment Place on PlaceEntity {
+	id
+	name
+}
+
+fragment PlaceWithReels on PlaceEntity {
+	...Place
+	reels {
+		id
+		name
+	}
+}
+
+fragment PlaceWithDistance on PlaceWithDistance {
+	id
+	name
+	status
+	address
+	weekdayStart
+	weekdayEnd
+	isHidden
+	source
+	distance
+	priority
+	likesCount
+	point {
+		coordinates
+	}
+	image {
+		id
+		url
+	}
+	logo {
+		id
+		url
+	}
+}

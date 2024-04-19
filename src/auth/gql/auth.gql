@@ -1,0 +1,11 @@
+mutation Login($body: LoginInput!) {
+	login(body: $body) {
+		accessToken
+	}
+}
+
+mutation VerifyCode($code: Int!) {
+	verifyCode(code: $code) {
+		accessToken
+	}
+}

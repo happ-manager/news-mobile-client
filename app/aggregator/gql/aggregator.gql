@@ -1,0 +1,69 @@
+query Tags($skip: Int, $take: Int, $sortBy: String, $sortType: SortTypeEnum, $filtersArgs: [FiltersArgsDto!]) {
+	tags(skip: $skip, take: $take, sortBy: $sortBy, sortType: $sortType, filtersArgs: $filtersArgs) {
+		data {
+			...Tag
+		}
+		page
+		totalCount
+	}
+}
+
+query ReelsNearby(
+	$skip: Int
+	$take: Int
+	$sortBy: String
+	$sortType: SortTypeEnum
+	$filtersArgs: [FiltersArgsDto!]
+	$address: String
+	$lat: Float
+	$lng: Float
+	$distance: Float
+) {
+	getReelsNearby(
+		skip: $skip
+		take: $take
+		sortBy: $sortBy
+		sortType: $sortType
+		filtersArgs: $filtersArgs
+		address: $address
+		lat: $lat
+		lng: $lng
+		distance: $distance
+	) {
+		page
+		totalCount
+		data {
+			...ReelWithDistance
+		}
+	}
+}
+
+query PlacesNearby(
+	$skip: Int
+	$take: Int
+	$sortBy: String
+	$sortType: SortTypeEnum
+	$filtersArgs: [FiltersArgsDto!]
+	$address: String
+	$lat: Float
+	$lng: Float
+	$distance: Float
+) {
+	getNearby(
+		skip: $skip
+		take: $take
+		sortBy: $sortBy
+		sortType: $sortType
+		filtersArgs: $filtersArgs
+		address: $address
+		lat: $lat
+		lng: $lng
+		distance: $distance
+	) {
+		page
+		totalCount
+		data {
+			...PlaceWithDistance
+		}
+	}
+}

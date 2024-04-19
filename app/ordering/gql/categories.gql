@@ -1,0 +1,10 @@
+query Categories {
+	categories {
+		data {
+			...Category
+			products {
+				...Product
+			}
+		}
+	}
+}

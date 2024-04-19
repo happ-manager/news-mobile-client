@@ -1,0 +1,6 @@
+fragment Tag on TagEntity {
+	id
+	name
+	icon
+	position
+}

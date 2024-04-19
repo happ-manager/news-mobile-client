@@ -1,0 +1,15 @@
+fragment Order on ActiveOrderEntity {
+	id
+}
+
+mutation CreateOrder($order: CreateOrderInput!) {
+	createOrder(order: $order) {
+		id
+	}
+}
+
+mutation UpdateOrder($order: UpdateOrderInput!) {
+	updateOrder(order: $order) {
+		id
+	}
+}
