@@ -1,11 +1,29 @@
-mutation Login($body: LoginInput!) {
-	login(body: $body) {
-		accessToken
+fragment AuthToken on AuthTokensDto {
+	accessToken
+	refreshToken
+	expiresIn
+}
+
+mutation Me {
+	me {
+		...AuthToken
 	}
 }
 
-mutation VerifyCode($code: Int!) {
-	verifyCode(code: $code) {
-		accessToken
+mutation RefreshTokens($refreshToken: String!) {
+	refreshTokens(refreshToken: $refreshToken) {
+		...AuthToken
+	}
+}
+
+mutation Login($tel: String!) {
+	login(tel: $tel) {
+		...AuthToken
+	}
+}
+
+mutation VerifyCode($verificationCode: String!) {
+	verifyCode(verificationCode: $verificationCode) {
+		...AuthToken
 	}
 }

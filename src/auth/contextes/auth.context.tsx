@@ -1,26 +1,32 @@
 import { createContext } from "react";
 
-import type { UserEntity } from "../../../graphql";
-import type { LoginMutationFn, VerifyCodeMutationFn } from "../gql/auth.gql";
+import type { AuthTokensDto, UserEntity } from "../../../graphql";
+import type { LoginMutationFn, MeMutationFn, RefreshTokensMutationFn, VerifyCodeMutationFn } from "../gql/auth.gql";
 
-interface AuthContextProps {
-	accessToken?: string;
+export interface AuthContextProps {
+	authTokens?: AuthTokensDto;
 	user?: UserEntity | null;
+	isLoading: boolean;
+	isInit: boolean;
+	error: Error | null;
+	logout: () => Promise<void>;
+	me: MeMutationFn;
 	login: LoginMutationFn;
 	verifyCode: VerifyCodeMutationFn;
-	logout: () => void;
-	isLoading: boolean;
-	error: Error | null;
+	refreshToken: RefreshTokensMutationFn;
 }
 
 const AuthContext = createContext<AuthContextProps>({
-	accessToken: "",
+	authTokens: undefined,
 	user: null,
-	login: (() => {}) as any,
-	verifyCode: (() => {}) as any,
-	logout: () => {},
 	isLoading: false,
-	error: null
+	isInit: false,
+	error: null,
+	logout: async () => {},
+	login: (() => {}) as any,
+	me: (() => {}) as any,
+	verifyCode: (() => {}) as any,
+	refreshToken: (() => {}) as any
 });
 
 export default AuthContext;

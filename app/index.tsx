@@ -1,9 +1,10 @@
+import type { FC } from "react";
 import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
-const App: React.FC = () => (
+const App: FC = () => (
 	<View>
-		<Text>Resty</Text>
+		<Text>Happ</Text>
 	</View>
 );
 

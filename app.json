@@ -1,27 +1,27 @@
 {
 	"expo": {
-		"name": "Resty",
-		"slug": "resty",
+		"name": "Happ",
+		"slug": "happ",
 		"version": "1.0.0",
 		"orientation": "portrait",
-		"icon": "./assets/icon.png",
+		"icon": "./assets/images/logo.png",
 		"userInterfaceStyle": "light",
 		"splash": {
-			"image": "./assets/splash.png",
+			"image": "./assets/images/logo.png",
 			"resizeMode": "contain",
 			"backgroundColor": "#ffffff"
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
-			"bundleIdentifier": "com.resty-admin.resty",
+			"bundleIdentifier": "com.happ-admin.happ",
 			"supportsTablet": true
 		},
 		"android": {
 			"adaptiveIcon": {
-				"foregroundImage": "./assets/adaptive-icon.png",
+				"foregroundImage": "./assets/images/logo.png",
 				"backgroundColor": "#ffffff"
 			},
-			"package": "com.restyadmin.resty"
+			"package": "com.happadmin.happ"
 		},
 		"web": {
 			"favicon": "./assets/favicon.ico"
@@ -31,8 +31,8 @@
 				"projectId": "4872d468-b78e-4497-9a39-0115b0584990"
 			}
 		},
-		"owner": "resty-admin",
+		"owner": "happ-admin",
 		"plugins": ["expo-router", "expo-font"],
-		"scheme": "resty-scheme"
+		"scheme": "happ-scheme"
 	}
 }

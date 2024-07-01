@@ -1,9 +1,0 @@
-fragment Product on ProductEntity {
-	id
-	name
-	description
-	price
-	image {
-		...File
-	}
-}

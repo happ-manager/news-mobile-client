@@ -1,0 +1,7 @@
+query Categories($skip: Int, $take: Int) {
+	categories(skip: $skip, take: $take) {
+		data {
+			...Category
+		}
+	}
+}

@@ -1,0 +1,23 @@
+query Articles($skip: Int, $take: Int) {
+	articles(skip: $skip, take: $take) {
+		data {
+			...Article
+		}
+	}
+}
+
+query Tags($skip: Int, $take: Int) {
+	tags(skip: $skip, take: $take) {
+		data {
+			...Tag
+		}
+	}
+}
+
+query Categories($skip: Int, $take: Int) {
+	categories(skip: $skip, take: $take) {
+		data {
+			...Category
+		}
+	}
+}

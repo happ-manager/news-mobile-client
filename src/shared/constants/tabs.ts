@@ -1,18 +1,17 @@
-const TABS = [
+import type ITab from "../interfaces/tab";
+
+const TABS: ITab[] = [
 	{
-		title: "Aggregator",
-		name: "aggregator/index",
-		href: "/aggregator"
+		title: "Blog",
+		name: "blog",
+		href: "/blog",
+		icon: "home"
 	},
 	{
-		title: "AI",
-		name: "ai/index",
-		href: "/ai"
-	},
-	{
-		title: "Ordering",
-		name: "ordering/index",
-		href: "/ordering"
+		title: "Profile",
+		name: "profile",
+		href: "/profile",
+		icon: "user"
 	}
 ];
 

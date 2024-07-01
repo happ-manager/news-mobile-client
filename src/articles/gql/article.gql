@@ -1,0 +1,6 @@
+fragment Article on ArticleEntity {
+	id
+	title
+	description
+	content
+}

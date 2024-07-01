@@ -1,4 +1,0 @@
-fragment File on FileEntity {
-	id
-	url
-}

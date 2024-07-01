@@ -1,5 +1,0 @@
-query Product($productId: String!) {
-	product(id: $productId) {
-		...Product
-	}
-}

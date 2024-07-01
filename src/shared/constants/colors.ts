@@ -3,7 +3,19 @@ const COLORS = {
 	BLACK: "#000000",
 	WHITE: "#ffffff",
 	GREY: "#E0E0E0",
-	DARK_GREY: "#808080"
+	DARK_GREY: "#808080",
+	DARK_BLUE: "#061730",
+	BROWN: "#585858",
+	LIGHT: "#F6F6F6",
+	GREEN: "#2ACD8F",
+	GREY2: "#888888",
+	BLUE: "#282344",
+	RED: "#FF4545",
+	GREY3: "#6E7F98",
+	LIGHT_BLUE: "#3177E0",
+	GREY4: "#3E4B5F",
+	GREY5: "#A1B1CA",
+	GREY6: "#AFAFAF"
 };
 
 export default COLORS;

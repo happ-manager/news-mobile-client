@@ -1,5 +1,0 @@
-query ActiveOrder($orderId: String) {
-	activeOrder(orderId: $orderId) {
-		...Order
-	}
-}

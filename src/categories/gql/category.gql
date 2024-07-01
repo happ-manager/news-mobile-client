@@ -2,10 +2,3 @@ fragment Category on CategoryEntity {
 	id
 	name
 }
-
-fragment CategoryWithProducts on CategoryEntity {
-	...Category
-	products {
-		...Product
-	}
-}
