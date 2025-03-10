@@ -1,21 +1,14 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
-import COLORS from "../constants/colors";
-import FONTS from "../constants/fonts";
-import SIZES from "../constants/sizes";
 import Text from "./text/text";
 
 const Header = () => (
 	<View style={styles.header}>
 		<View style={styles.avatar}></View>
 		<View style={styles.info}>
-			<Text fontFamily={FONTS.PRIMARY_BOLD} fontSize={SIZES.LG} color={COLORS.WHITE}>
-				Good Morning 👋
-			</Text>
-			<Text fontFamily={FONTS.PRIMARY} fontSize={SIZES.MD} color={COLORS.WHITE}>
-				Hanna Workman
-			</Text>
+			<Text style={styles.hello}>Good Morning 👋</Text>
+			<Text style={styles.name}>Hanna Workman</Text>
 		</View>
 	</View>
 );
@@ -38,7 +31,9 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: "center"
 	},
-	search: {}
+	search: {},
+	hello: {},
+	name: {}
 });
 
 export default Header;

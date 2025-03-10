@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32e77c60-ba05-4a1f-a978-01406c274d80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lintstagedrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.lintstagedrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/blog/article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/blog/article.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/blog/articles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/blog/articles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/blog/gql/articles.gql" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/blog/gql/articles.gql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/blog/gql/articles.gql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/blog/gql/articles.gql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/profile/settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/profile/settings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/graphql.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metro.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/metro.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/articles/components/article.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/articles/components/article-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/back.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/back.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tqMQvfXr35U6ItnQRCEjnqCM2T" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/viacheslavsaloid/Work/happ/news/mobile-client&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/viacheslavsaloid/Work/happ/news/mobile-client/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32e77c60-ba05-4a1f-a978-01406c274d80" name="Changes" comment="" />
+      <created>1741075138854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741075138854</updated>
+      <workItem from="1741075141018" duration="1623000" />
+      <workItem from="1741601730277" duration="49000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

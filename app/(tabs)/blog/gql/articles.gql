@@ -1,5 +1,5 @@
-query Articles($skip: Int, $take: Int) {
-	articles(skip: $skip, take: $take) {
+query Articles($categoryId: String, $skip: Int, $take: Int) {
+	articles(categoryId: $categoryId, skip: $skip, take: $take) {
 		data {
 			...Article
 		}

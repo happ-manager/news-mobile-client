@@ -12,12 +12,12 @@ import Tag from "../../tags/components/tag/tag";
 import TAG_THEMS from "../../tags/components/tag/tag-themes";
 import type { ArticleFragment } from "../gql/article.gql";
 
-interface ArticleProps {
+interface ArticleCardProps {
 	articleStyle?: ViewStyle;
 	article?: ArticleFragment | null;
 }
 
-const Article: FC<ArticleProps> = (props) => {
+const ArticleCard: FC<ArticleCardProps> = (props) => {
 	const { article, articleStyle } = props;
 
 	const source = require("../../../assets/images/tag.png");
@@ -94,4 +94,4 @@ const styles = StyleSheet.create({
 	}
 });
 
-export default Article;
+export default ArticleCard;

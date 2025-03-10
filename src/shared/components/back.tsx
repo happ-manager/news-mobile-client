@@ -1,7 +1,7 @@
 import { merge } from "lodash";
 import type { FC, PropsWithChildren } from "react";
 import React from "react";
-import { StyleSheet, View, type ViewStyle } from "react-native";
+import { StyleSheet, TouchableOpacity, type ViewStyle } from "react-native";
 
 import COLORS from "../constants/colors";
 import FONTS from "../constants/fonts";
@@ -11,18 +11,20 @@ import Text from "./text/text";
 
 interface BackProps extends PropsWithChildren {
 	backStyle?: ViewStyle;
+	text?: string;
+	handleClick?: () => void;
 }
 
 const Back: FC<BackProps> = (props) => {
-	const { backStyle } = props;
+	const { backStyle, text, handleClick } = props;
 
 	const styles = merge({}, theme1, { back: backStyle });
 
 	return (
-		<View style={styles.back}>
+		<TouchableOpacity style={styles.back} onPress={() => handleClick && handleClick()}>
 			<Icons.ArrowLeft />
-			<Text textStyle={styles.text}>Profile</Text>
-		</View>
+			<Text textStyle={styles.text}>{text || "Назад"}</Text>
+		</TouchableOpacity>
 	);
 };
 

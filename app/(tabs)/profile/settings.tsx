@@ -1,4 +1,3 @@
-import { Image } from "expo-image";
 import { useRouter } from "expo-router";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
@@ -20,51 +19,23 @@ const Settings = () => {
 	const {
 		control,
 		formState: { errors }
-	} = useForm<{ email: string; name: string; tel: string }>();
+	} = useForm<{ tel: string }>();
 
 	const onPress = async () => {
 		await logout();
 		router.push("");
 	};
 
+	const onBack = () => {
+		router.push("blog");
+	};
+
 	return (
 		<SafeAreaView style={styles.settings}>
 			<View style={styles.container}>
-				<Back />
-
-				<Image source={require("../../../assets/images/tag.png")} contentFit={"cover"} style={styles.image} />
+				<Back text={"Back to Blog"} handleClick={() => onBack()} />
 
 				<View style={styles.form}>
-					<Controller
-						name="email"
-						control={control}
-						render={({ field: { onChange, onBlur, value } }) => (
-							<Input
-								label="Почта"
-								onChangeText={onChange}
-								onBlur={onBlur}
-								value={value}
-								error={errors.email && errors.email.message}
-								placeholder="Введите вашу почту"
-							/>
-						)}
-					/>
-
-					<Controller
-						name="name"
-						control={control}
-						render={({ field: { onChange, onBlur, value } }) => (
-							<Input
-								label="Имя"
-								onChangeText={onChange}
-								onBlur={onBlur}
-								value={value}
-								error={errors.name && errors.name.message}
-								placeholder="Введите ваше имя"
-							/>
-						)}
-					/>
-
 					<Controller
 						name="tel"
 						control={control}

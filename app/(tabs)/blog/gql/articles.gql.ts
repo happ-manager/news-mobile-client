@@ -7,6 +7,7 @@ import { CategoryFragmentDoc } from "../../../../src/categories/gql/category.gql
 import { TagFragmentDoc } from "../../../../src/tags/gql/tag.gql";
 const defaultOptions = {} as const;
 export type ArticlesQueryVariables = Types.Exact<{
+	categoryId?: Types.InputMaybe<Types.Scalars["String"]["input"]>;
 	skip?: Types.InputMaybe<Types.Scalars["Int"]["input"]>;
 	take?: Types.InputMaybe<Types.Scalars["Int"]["input"]>;
 }>;
@@ -43,8 +44,8 @@ export interface CategoriesQuery {
 }
 
 export const ArticlesDocument = gql`
-	query Articles($skip: Int, $take: Int) {
-		articles(skip: $skip, take: $take) {
+	query Articles($categoryId: String, $skip: Int, $take: Int) {
+		articles(categoryId: $categoryId, skip: $skip, take: $take) {
 			data {
 				...Article
 			}
@@ -65,6 +66,7 @@ export const ArticlesDocument = gql`
  * @example
  * const { data, loading, error } = useArticlesQuery({
  *   variables: {
+ *      categoryId: // value for 'categoryId'
  *      skip: // value for 'skip'
  *      take: // value for 'take'
  *   },

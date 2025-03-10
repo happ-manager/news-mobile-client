@@ -1,38 +1,41 @@
 {
 	"expo": {
-		"name": "Happ",
-		"slug": "happ",
+		"name": "HappNews",
+		"slug": "HappNews",
 		"version": "1.0.0",
 		"orientation": "portrait",
-		"icon": "./assets/images/logo.png",
-		"userInterfaceStyle": "light",
-		"splash": {
-			"image": "./assets/images/logo.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#ffffff"
-		},
-		"assetBundlePatterns": ["**/*"],
+		"icon": "./assets/images/icon.png",
+		"scheme": "myapp",
+		"userInterfaceStyle": "automatic",
+		"newArchEnabled": true,
 		"ios": {
-			"bundleIdentifier": "com.happ-admin.happ",
 			"supportsTablet": true
 		},
 		"android": {
 			"adaptiveIcon": {
-				"foregroundImage": "./assets/images/logo.png",
+				"foregroundImage": "./assets/images/adaptive-icon.png",
 				"backgroundColor": "#ffffff"
-			},
-			"package": "com.happadmin.happ"
-		},
-		"web": {
-			"favicon": "./assets/favicon.ico"
-		},
-		"extra": {
-			"eas": {
-				"projectId": "4872d468-b78e-4497-9a39-0115b0584990"
 			}
 		},
-		"owner": "happ-admin",
-		"plugins": ["expo-router", "expo-font"],
-		"scheme": "happ-scheme"
+		"web": {
+			"bundler": "metro",
+			"output": "static",
+			"favicon": "./assets/images/favicon.png"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-splash-screen",
+				{
+					"image": "./assets/images/splash-icon.png",
+					"imageWidth": 200,
+					"resizeMode": "contain",
+					"backgroundColor": "#ffffff"
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true
+		}
 	}
 }

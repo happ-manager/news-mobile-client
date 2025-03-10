@@ -84,7 +84,7 @@ const Login: FC = () => {
 					</View>
 
 					<Text textStyle={styles.dontHaveAccount}>
-						Еще нет аккаунта? <Text theme={TEXT_THEMES.HIGHLIGHTED_TEXT}>Создать</Text>
+						Еще нет аккаунта? <Text theme={TEXT_THEMES.HIGHLIGHTED}>Создать</Text>
 					</Text>
 				</View>
 			</View>

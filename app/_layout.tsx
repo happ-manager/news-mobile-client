@@ -1,5 +1,3 @@
-import "core-js/stable/atob";
-
 import { ApolloProvider } from "@apollo/client";
 import { useFonts } from "expo-font";
 import { Stack, useRouter } from "expo-router";
@@ -38,7 +36,8 @@ const AppProviders: FC<PropsWithChildren> = ({ children }) => {
 };
 
 const AppPreload = () => {
-	const { user, isInit } = useAuth();
+	const { user, isInit } = clear;
+	useAuth();
 	const router = useRouter();
 	const [fontsLoaded, fontError] = useFonts({
 		Outfit: require("../assets/fonts/Outfit/static/Outfit-Regular.ttf"),
